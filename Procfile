@@ -1,1 +1,1 @@
-web gunicorn api.wsgi --log-file -
+web gunicorn sperm.wsgi --log-file -
