@@ -11,6 +11,7 @@ gunicorn = "*"
 psycopg2-binary = "*"
 django-cors-headers = "*"
 dj-database-url = "*"
+pylint = "*"
 
 [dev-packages]
 
