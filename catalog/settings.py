@@ -84,9 +84,9 @@ WSGI_APPLICATION = 'catalog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sperm_db',
-        'USER': 'govno',
-        'PASSWORD': 'huesos123',
+        'NAME': os.getenv('db_name'),
+        'USER': os.getenv('db_username'),
+        'PASSWORD': os.getenv('db_user_password'),
         'HOST': 'localhost',
         'PORT': '5432'
     }
