@@ -28,7 +28,7 @@ SECRET_KEY = 'ch9+ml3pf!v(c5&#od^$n_0tne7@gh7m(4-dyo813dd52fq#o^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['spermoback.herokuapp.com']
+ALLOWED_HOSTS = [os.getenv('service_url')]
 
 
 # Application definition
@@ -139,7 +139,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = ['localhost:8080']
 
 
 REST_FRAMEWORK = {
