@@ -6,12 +6,9 @@ name = "pypi"
 [packages]
 django = "*"
 djangorestframework = "*"
-djoser = "*"
 gunicorn = "*"
 psycopg2-binary = "*"
-django-cors-headers = "*"
-dj-database-url = "*"
-pylint = "*"
+djoser = "*"
 
 [dev-packages]
 

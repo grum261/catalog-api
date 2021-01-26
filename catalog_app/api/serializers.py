@@ -1,11 +1,13 @@
 from rest_framework import serializers
-from .models import Application
+from .models import Applicant
 from django.contrib.auth.models import User
 
 
-class ApplicationSerializer(serializers.ModelSerializer):
+class ApplicantSerializer(serializers.ModelSerializer):
+    created_by = serializers.CharField(default=serializers.CurrentUserDefault())
+
     class Meta:
-        model = Application
+        model = Applicant
         fields = '__all__'
 
 class UserSerializer(serializers.ModelSerializer):
